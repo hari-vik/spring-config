@@ -6,4 +6,4 @@ kafka:
         topic: test
       sap:
         listener-class: ClientMessageListener
-        topic: sunrise.reverse.dispatcher.dev.nute.sap.0
+        topic: sunrise.reverse.dispatcher.dev.nute.sap
