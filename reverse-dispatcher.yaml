@@ -9,5 +9,5 @@ kafka:
       sap:
         listener-class: ClientMessageListener
         topic: sunrise.reverse.dispatcher.dev.nute.sap.0
-        channel: SAP
+        channel: sunrise
         endpoint: http://localhost:8082/
