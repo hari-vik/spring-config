@@ -1,0 +1,6 @@
+kafka:
+   client:
+      listeners:
+         test:
+            listener-class: ClientMessageListener
+            topic: test
