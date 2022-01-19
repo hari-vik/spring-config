@@ -1,4 +1,6 @@
 kafka:
+  internal:
+    topic: sunriseupc.reversedispatcher.internal.processing.0
   client:
     listeners:
       test:
