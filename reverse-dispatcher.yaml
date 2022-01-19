@@ -1,4 +1,4 @@
-kafka:
+reverse-dispatcher-kafka:
   internal:
     producer:
       topic: sunriseupc.reversedispatcher.internal.processing.0
