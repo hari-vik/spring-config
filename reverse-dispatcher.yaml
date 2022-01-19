@@ -1,8 +1,13 @@
 kafka:
   internal:
-    topic: sunriseupc.reversedispatcher.internal.processing.0
+    producer:
+      topic: sunriseupc.reversedispatcher.internal.processing.0
+    consumer:
+      topic: sunriseupc.reversedispatcher.internal.processing.0
+      group-id: sunriseupc-reverse-dispatcher-internal-consumer
   client:
-    listeners:
+    consumer-group-id: sunriseupc-reverse-dispatcher-client-consumer
+    producers:
       test:
         listener-class: ClientMessageListener
         topic: test
