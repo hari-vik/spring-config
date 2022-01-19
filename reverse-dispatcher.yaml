@@ -13,3 +13,8 @@ kafka:
         topic: test
         channel: sunrise
         endpoint: http://localhost:8082/
+      sap:
+        listener-class: ClientMessageListener
+        topic: sunrise.reverse.dispatcher.dev.nute.sap.0
+        channel: sunrise
+        endpoint: http://localhost:8082/
