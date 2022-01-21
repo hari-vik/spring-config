@@ -10,11 +10,6 @@ reverse-dispatcher-kafka:
     producers:
       test:
         listener-class: ClientMessageListener
-        topic: test
-        channel: sunrise
-        endpoint: http://localhost:8082/
-      sap:
-        listener-class: ClientMessageListener
-        topic: sunrise.reverse.dispatcher.dev.nute.sap.0
+        topic: sunrise.reverse.dispatcher.dev.test.0
         channel: sunrise
         endpoint: http://localhost:8082/
