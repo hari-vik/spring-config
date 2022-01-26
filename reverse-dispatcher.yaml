@@ -5,7 +5,7 @@ reverse-dispatcher:
     status-to-process: PENDING
     records-limit: 10
     max-allowed-err: 5
-    process-interval-cron: 0/2 * *  * * ?
+    process-interval-cron: 0/2 * * * * ?
     pending-message-reset-cron: 0 0 0/1 1/1 * ?
   kafka:
     internal:
