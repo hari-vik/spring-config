@@ -7,28 +7,28 @@ reverse-dispatcher:
     max-allowed-err: 5
     process-interval-cron: 0/2 * *  * * ?
     pending-message-reset-cron: 0 0 0/1 1/1 * ?
-kafka:
-  internal:
-    producer:
-      topic: sunriseupc.reversedispatcher.internal.processing.0
-    consumer:
-      topic: sunriseupc.reversedispatcher.internal.processing.0
-      group-id: sunriseupc-reverse-dispatcher-internal-consumer
-  client:
-    consumer-group-id: sunriseupc-reverse-dispatcher-client-consumer
-    producers:
-      test:
-        listener-class: ClientMessageListener
-        topic: sunrise.reverse.dispatcher.dev.test.0
-        channel: sunrise
-        endpoint: http://localhost:8082/
-      sap:
-        listener-class: ClientMessageListener
-        topic: sunrise.reverse.dispatcher.dev.sap.0
-        channel: sunrise
-        endpoint: http://localhost:8082/
-      sapv2:
-        listener-class: ClientMessageListener
-        topic: sunrise.reverse.dispatcher.dev.sap.0
-        channel: sunrise
-        endpoint: http://localhost:8082/
+  kafka:
+    internal:
+      producer:
+        topic: sunriseupc.reversedispatcher.internal.processing.0
+      consumer:
+        topic: sunriseupc.reversedispatcher.internal.processing.0
+        group-id: sunriseupc-reverse-dispatcher-internal-consumer
+    client:
+      consumer-group-id: sunriseupc-reverse-dispatcher-client-consumer
+      producers:
+        test:
+          listener-class: ClientMessageListener
+          topic: sunrise.reverse.dispatcher.dev.test.0
+          channel: sunrise
+          endpoint: http://localhost:8082/
+        sap:
+          listener-class: ClientMessageListener
+          topic: sunrise.reverse.dispatcher.dev.sap.0
+          channel: sunrise
+          endpoint: http://localhost:8082/
+        sapv2:
+          listener-class: ClientMessageListener
+          topic: sunrise.reverse.dispatcher.dev.sap.0
+          channel: sunrise
+          endpoint: http://localhost:8082/
