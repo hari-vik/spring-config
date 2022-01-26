@@ -1,5 +1,5 @@
-message-process:
-  prop:
+reverse-dispatcher:
+  message:
     #Past Time range from current time to pick message to process (In hours)
     pending-time-range: 3
     status-to-process: PENDING
@@ -7,7 +7,7 @@ message-process:
     max-allowed-err: 5
     process-interval-cron: 0/2 * *  * * ?
     pending-message-reset-cron: 0 0 0/1 1/1 * ?
-reverse-dispatcher-kafka:
+kafka:
   internal:
     producer:
       topic: sunriseupc.reversedispatcher.internal.processing.0
