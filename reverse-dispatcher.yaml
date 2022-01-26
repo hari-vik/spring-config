@@ -23,8 +23,3 @@ reverse-dispatcher-kafka:
         topic: sunrise.reverse.dispatcher.dev.sap.0
         channel: sunrise
         endpoint: http://localhost:8082/
-      sapv3:
-        listener-class: ClientMessageListener
-        topic: sunrise.reverse.dispatcher.dev.sap.0
-        channel: sunrise
-        endpoint: http://localhost:8082/
