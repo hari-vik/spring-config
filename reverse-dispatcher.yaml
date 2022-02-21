@@ -27,3 +27,8 @@ reverse-dispatcher:
           topic: sunrise.reverse.dispatcher.dev.sap.0
           channel: sunrise
           endpoint: http://localhost:8082/
+        sapv2:
+          listener-class: ClientMessageListener
+          topic: sunrise.reverse.dispatcher.dev.sapv2.0
+          channel: sunrise
+          endpoint: http://localhost:8082/
